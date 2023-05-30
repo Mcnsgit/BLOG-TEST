@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog Posts</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Blog Posts</h1>
+<% blogPosts.forEach(blogPost => { %>
+    <h2><%= blogPost.title %></h2>
+    <p><%= blogPost.content %></p>
+    <p><%= blogPost.date.toDateString() %></p>
+<% }) %>
+</body>
+</html>

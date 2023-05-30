@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Blog Post</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Edit Blog Post</h1>
+<form action="/posts/<%= blogPost._id %>/edit" method="post">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title" value="<%= blogPost.title %>"><br>
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content"><%= blogPost.content %></textarea><br>
+    <input type="submit" value="Submit">
+    <body>
+        <!-- ... -->
+        <form class="delete-form" action="/posts/<%= blogPost._id %>/delete" method="post">
+        <input type="submit" value="Delete">
+        </form>
+        <script src="/js/scripts.js"></script>
+    </body>
+
+</form>
+</body>
+</html>

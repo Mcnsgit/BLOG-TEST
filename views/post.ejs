@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= blogPost.title %></title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1><%= blogPost.title %></h1>
+<p><%= blogPost.content %></p>
+<p><%= blogPost.date.toDateString() %></p>
+<form action="/posts/<%= blogPost._id %>/delete" method="post">
+    <input type="submit" value="Delete">
+    <form class="delete-form" action="/posts/<%= blogPost._id %>/delete" method="post">
+        <input type="submit" value="Delete">
+        </form>
+        <script src="/js/scripts.js"></script>
+    </body>
+</form>
+
+</body>
+</html>
